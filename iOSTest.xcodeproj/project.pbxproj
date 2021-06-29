@@ -10,6 +10,7 @@
 		1FC37D1D268B570F008A3B2C /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC37D1C268B570F008A3B2C /* Message.m */; };
 		1FC37D1F268BA7F8008A3B2C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC37D1E268BA7F8008A3B2C /* LoginViewModel.swift */; };
 		1FC37D21268BC84A008A3B2C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC37D20268BC84A008A3B2C /* back.png */; };
+		1FC37D23268BCC76008A3B2C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FC37D22268BC9FF008A3B2C /* README.md */; };
 		1FD8DDEA268A6F5800A3C339 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8DDE9268A6F5800A3C339 /* ChatViewModel.swift */; };
 		1FD8DDEC268ACD8200A3C339 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FD8DDEB268ACD8200A3C339 /* file.json */; };
 		6900F5E121BF4726007AFBB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6900F5E021BF4726007AFBB8 /* Assets.xcassets */; };
@@ -304,6 +305,7 @@
 			files = (
 				F264BDD71D7F642200275D46 /* LoginViewController.xib in Resources */,
 				1FD8DDEC268ACD8200A3C339 /* file.json in Resources */,
+				1FC37D23268BCC76008A3B2C /* README.md in Resources */,
 				1FC37D21268BC84A008A3B2C /* back.png in Resources */,
 				F264BDBE1D7F52E500275D46 /* LaunchScreen.xib in Resources */,
 				F264BDB71D7F503300275D46 /* MenuViewController.xib in Resources */,
