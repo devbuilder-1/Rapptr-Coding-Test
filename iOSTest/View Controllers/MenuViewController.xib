@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="iOSTest" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_home_menu" translatesAutoresizingMaskIntoConstraints="NO" id="OxZ-w4-hv8">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="934"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S5S-r0-kef" userLabel="TopBar">
+                    <rect key="frame" x="0.0" y="0.0" width="436" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.054901960784313725" green="0.36078431372549019" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coding Tasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieh-Rd-BdS">
+                    <rect key="frame" x="160.66666666666666" y="38" width="106.99999999999997" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJv-aO-t9i" userLabel="animation_button_view">
+                    <rect key="frame" x="30" y="390" width="368" height="56"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9WS-zA-jV0">
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="56"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_animation" translatesAutoresizingMaskIntoConstraints="NO" id="uLK-ZR-7L7" userLabel="animation_chat">
+                                <rect key="frame" x="22" y="16" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="V60-7p-fFo"/>
+                                    <constraint firstAttribute="width" constant="24" id="zkr-Ca-i1D"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCt-bR-yky" userLabel="animation_button">
+                                <rect key="frame" x="62" y="0.0" width="306" height="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="ANIMATION">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressAnimationButton:" destination="-1" eventType="touchUpInside" id="zzf-Rj-rdW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="uLK-ZR-7L7" firstAttribute="centerY" secondItem="9WS-zA-jV0" secondAttribute="centerY" id="3b9-EM-oIe"/>
+                            <constraint firstAttribute="bottom" secondItem="hCt-bR-yky" secondAttribute="bottom" id="LvH-Qb-B9J"/>
+                            <constraint firstItem="uLK-ZR-7L7" firstAttribute="leading" secondItem="9WS-zA-jV0" secondAttribute="leading" constant="22" id="NcV-un-2CH"/>
+                            <constraint firstAttribute="trailing" secondItem="hCt-bR-yky" secondAttribute="trailing" id="P2x-5D-OfX"/>
+                            <constraint firstItem="uLK-ZR-7L7" firstAttribute="top" secondItem="9WS-zA-jV0" secondAttribute="top" constant="16" id="Vip-x0-0EF"/>
+                            <constraint firstItem="hCt-bR-yky" firstAttribute="leading" secondItem="uLK-ZR-7L7" secondAttribute="trailing" constant="16" id="bYf-qW-l4C"/>
+                            <constraint firstItem="hCt-bR-yky" firstAttribute="centerY" secondItem="9WS-zA-jV0" secondAttribute="centerY" id="c7Q-NX-cXX"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </visualEffectView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoZ-Ug-EPw" userLabel="chat_button_view">
+                    <rect key="frame" x="30" y="227" width="368" height="56"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QqI-ph-yhq">
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="56"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chat" translatesAutoresizingMaskIntoConstraints="NO" id="v2d-lk-Jbn">
+                                <rect key="frame" x="22" y="16" width="24" height="24"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcc-SR-VIK" userLabel="chat_button">
+                                <rect key="frame" x="62" y="0.0" width="306" height="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="CHAT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressChatButton:" destination="-1" eventType="touchUpInside" id="hkd-Ru-4XQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Wcc-SR-VIK" firstAttribute="centerY" secondItem="QqI-ph-yhq" secondAttribute="centerY" id="EOM-n9-7SM"/>
+                            <constraint firstAttribute="bottom" secondItem="Wcc-SR-VIK" secondAttribute="bottom" id="EkN-fb-OsA"/>
+                            <constraint firstItem="Wcc-SR-VIK" firstAttribute="leading" secondItem="v2d-lk-Jbn" secondAttribute="trailing" constant="16" id="OVr-L5-FfA"/>
+                            <constraint firstItem="v2d-lk-Jbn" firstAttribute="centerY" secondItem="QqI-ph-yhq" secondAttribute="centerY" id="TQl-9M-kbG"/>
+                            <constraint firstItem="v2d-lk-Jbn" firstAttribute="top" secondItem="QqI-ph-yhq" secondAttribute="top" constant="16" id="fBT-Mk-uzt"/>
+                            <constraint firstAttribute="trailing" secondItem="Wcc-SR-VIK" secondAttribute="trailing" id="rrM-yq-tQN"/>
+                            <constraint firstItem="v2d-lk-Jbn" firstAttribute="leading" secondItem="QqI-ph-yhq" secondAttribute="leading" constant="22" id="vHt-p7-8LC"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </visualEffectView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgh-Uc-NYt" userLabel="login_button_view">
+                    <rect key="frame" x="30" y="310" width="368" height="56"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KHa-nQ-BxR">
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="56"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_login" translatesAutoresizingMaskIntoConstraints="NO" id="P3e-Lb-ip4" userLabel="login_chat">
+                                <rect key="frame" x="22" y="16" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="2LI-qe-dF4"/>
+                                    <constraint firstAttribute="width" constant="24" id="kId-8V-TnM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wl-WO-tr1" userLabel="login_button">
+                                <rect key="frame" x="62" y="0.0" width="306" height="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressLoginButton:" destination="-1" eventType="touchUpInside" id="gaU-yS-39c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2wl-WO-tr1" secondAttribute="trailing" id="C9h-RU-B02"/>
+                            <constraint firstItem="P3e-Lb-ip4" firstAttribute="leading" secondItem="KHa-nQ-BxR" secondAttribute="leading" constant="22" id="Jen-d6-P3c"/>
+                            <constraint firstItem="2wl-WO-tr1" firstAttribute="leading" secondItem="P3e-Lb-ip4" secondAttribute="trailing" constant="16" id="hhv-le-kUL"/>
+                            <constraint firstItem="P3e-Lb-ip4" firstAttribute="top" secondItem="KHa-nQ-BxR" secondAttribute="top" constant="16" id="hiU-a0-c13"/>
+                            <constraint firstItem="2wl-WO-tr1" firstAttribute="centerY" secondItem="KHa-nQ-BxR" secondAttribute="centerY" id="jdS-6Q-xDh"/>
+                            <constraint firstAttribute="bottom" secondItem="2wl-WO-tr1" secondAttribute="bottom" id="wPD-tc-bE3"/>
+                            <constraint firstItem="P3e-Lb-ip4" firstAttribute="centerY" secondItem="2wl-WO-tr1" secondAttribute="centerY" id="zGZ-ve-5op"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yJv-aO-t9i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="4Km-V3-fuF"/>
+                <constraint firstItem="LoZ-Ug-EPw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="227" id="Guh-4v-J4D"/>
+                <constraint firstAttribute="trailing" secondItem="yJv-aO-t9i" secondAttribute="trailing" constant="30" id="QXG-0J-UCB"/>
+                <constraint firstItem="ieh-Rd-BdS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="38" id="Qav-yf-x7m"/>
+                <constraint firstAttribute="trailing" secondItem="LoZ-Ug-EPw" secondAttribute="trailing" constant="30" id="XDE-6t-F1M"/>
+                <constraint firstItem="fgh-Uc-NYt" firstAttribute="top" secondItem="LoZ-Ug-EPw" secondAttribute="bottom" constant="27" id="ZaN-8U-F3f"/>
+                <constraint firstItem="fgh-Uc-NYt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="fxm-1r-0LT"/>
+                <constraint firstItem="ieh-Rd-BdS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gIe-6U-5fU"/>
+                <constraint firstAttribute="trailing" secondItem="fgh-Uc-NYt" secondAttribute="trailing" constant="30" id="tRS-TB-lip"/>
+                <constraint firstItem="LoZ-Ug-EPw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="te8-LX-OQP"/>
+                <constraint firstItem="yJv-aO-t9i" firstAttribute="top" secondItem="fgh-Uc-NYt" secondAttribute="bottom" constant="24" id="wF9-U3-cJT"/>
+            </constraints>
+            <point key="canvasLocation" x="550.93457943925227" y="312.31101511879052"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_home_menu" width="375" height="667"/>
+        <image name="ic_animation" width="23" height="24"/>
+        <image name="ic_chat" width="24" height="24"/>
+        <image name="ic_login" width="24" height="24"/>
+    </resources>
+</document>
